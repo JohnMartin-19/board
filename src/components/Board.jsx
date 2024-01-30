@@ -9,7 +9,7 @@ function Board() {
 
   useEffect(()=> {
     fetch('/start_game', {
-      method: 'POST',
+      method: 'GET',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({board})
     }).then(res => res.json()).then((data) => {
